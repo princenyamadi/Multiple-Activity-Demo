@@ -9,7 +9,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
     public void goToNext(View view){
         Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
-
+        intent.putExtra("age",28);
         startActivity(intent);
     }
     @Override
